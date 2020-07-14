@@ -304,3 +304,25 @@ h6 {
         font-size: 0.8rem;
     }
 }
+@media only screen and (max-width: 900px) {
+    .reportingPanel {
+        text-align: center;
+    }
+    
+    .reportingPanel>* {
+        float: none;
+    }
+    
+    #heading {
+        margin-left: 24px;
+    }
+    
+    .separator {
+        margin: 1rem 0;
+    }
+}
+@media only screen and (max-width: 370px) {
+    .page-content>div {
+        overflow-y: scroll;
+    }
+}
