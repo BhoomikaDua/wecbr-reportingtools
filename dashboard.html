@@ -21,6 +21,10 @@
             // Sidebar toggle behavior
             $('#sidebarCollapse').on('click', function() {
                 $('#sidebar, #content').toggleClass('active');
+                if ($('#sidebar').hasClass('active'))
+                    $('#reporting').removeClass('hideCardContent');
+                else
+                    $('#reporting').addClass('hideCardContent');
             });
 
             //Reporting Tool Checkbox : Toggles Submit Button
@@ -85,12 +89,12 @@
 
         <ul class="nav flex-column bg-white mb-0">
             <li class="nav-item">
-                <a href="#" onclick="calldashboard()" class="nav-link text-dark font-italic bg-light active">
+                <a href="#" onclick="calldashboard()" class="nav-link text-dark font-italic bg-light active" id="dashboardListItem">
                     <i class="fa fa-th-large mr-3 text-primary fa-fw"></i> Dashboard
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" onclick="callreportingtool()" class="nav-link text-dark font-italic">
+                <a href="#" onclick="callreportingtool()" class="nav-link text-dark font-italic" id="reportingListItem">
                     <i class="fa fa-address-card mr-3 text-primary fa-fw"></i> Reporting Tool
                 </a>
             </li>
@@ -274,7 +278,7 @@
             </div>
         </div>
         <!--Reporting tools  -->
-        <div id="reporting">
+        <div id="reporting" class="hideCardContent">
 
             <div class="container emp-profile" id="reportingform">
                 <form method="post">
