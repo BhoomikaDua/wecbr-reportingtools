@@ -304,6 +304,14 @@ h6 {
     #heading {
         display: none;
     }
+    #myeditor {
+       
+        height:500px;
+        
+    }
+    #editortextarea{
+        height:496.5px!important;
+    }
 }
 @media (max-width: 322px) {
     #sub_bun {
