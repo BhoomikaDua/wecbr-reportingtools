@@ -342,8 +342,8 @@ h6 {
         margin: 1rem 0;
     }
 }
-@media only screen and (max-width: 370px) {
-    .page-content>div {
-        overflow-y: scroll;
+@media only screen and (max-width: 560px) {
+    .hideCardContent {
+        display: none !important;
     }
 }
