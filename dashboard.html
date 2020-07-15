@@ -22,9 +22,9 @@
             $('#sidebarCollapse').on('click', function() {
                 $('#sidebar, #content').toggleClass('active');
                 if ($('#sidebar').hasClass('active'))
-                    $('#reporting').removeClass('hideCardContent');
-                else
                     $('#reporting').addClass('hideCardContent');
+                else
+                    $('#reporting').removeClass('hideCardContent');
             });
 
             //Reporting Tool Checkbox : Toggles Submit Button
