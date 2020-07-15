@@ -302,7 +302,7 @@ h6 {
     }
     
     #heading {
-        display: none;
+        /* display: none; */
     }
     #myeditor {
        
