@@ -20,11 +20,7 @@
         $(function() {
             // Sidebar toggle behavior
             $('#sidebarCollapse').on('click', function() {
-                $('#sidebar, #content').toggleClass('active');
-                if ($('#sidebar').hasClass('active'))
-                    $('#reporting').addClass('hideCardContent');
-                else
-                    $('#reporting').removeClass('hideCardContent');
+                $('#sidebar, #content').toggleClass('active')
             });
 
             //Reporting Tool Checkbox : Toggles Submit Button
@@ -45,8 +41,8 @@
             });
         });
 
-     
-       
+
+
 
         (function($) {
             $(document).ready(function() {
