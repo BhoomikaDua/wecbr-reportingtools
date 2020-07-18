@@ -54,9 +54,7 @@ h6 {
     margin: auto;
 }
 
-#reporting {
-    display: none;
-}
+
 
 #heading {
     background-color: white;
@@ -122,6 +120,7 @@ h6 {
     color: blue;
     /* text-align: center; */
 }
+
 
 #download-certi {
     float: right;
@@ -190,9 +189,6 @@ h6 {
     color: #0099FF;
 }
 
-.active {
-    /* background-color: #0099FF; */
-}
 
 .profile-edit-btn {
     border: none;
@@ -301,9 +297,7 @@ h6 {
         width: calc(100% - 14rem);
     }
     
-    #heading {
-        /* display: none; */
-    }
+
     #myeditor {
        
         height:500px;

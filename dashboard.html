@@ -45,22 +45,8 @@
             });
         });
 
-        function callreportingtool() {
-            document.getElementById('myprofilestyle').style.display = 'none';
-            document.getElementById('reporting').style.display = "unset";
-        }
-
-
-        function calldashboard() {
-            document.getElementById('myprofilestyle').style.display = 'unset';
-            document.getElementById('reporting').style.display = "none";
-        }
-
-        (function($) {
-            $(document).ready(function() {
-                CKEDITOR.replace($('.ckeditor').get(0), {});
-            });
-        })(jQuery);
+     
+       
 
         (function($) {
             $(document).ready(function() {
@@ -89,12 +75,12 @@
 
         <ul class="nav flex-column bg-white mb-0">
             <li class="nav-item">
-                <a href="#" onclick="calldashboard()" class="nav-link text-dark font-italic bg-light active" id="dashboardListItem">
+                <a href="dashboard.html" class="nav-link text-dark font-italic bg-light active" id="dashboardListItem">
                     <i class="fa fa-th-large mr-3 text-primary fa-fw"></i> Dashboard
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" onclick="callreportingtool()" class="nav-link text-dark font-italic" id="reportingListItem">
+                <a href="reportingtool.html" class="nav-link text-dark font-italic" id="reportingListItem">
                     <i class="fa fa-address-card mr-3 text-primary fa-fw"></i> Reporting Tool
                 </a>
             </li>
@@ -277,45 +263,7 @@
                 </form>
             </div>
         </div>
-        <!--Reporting tools  -->
-        <div id="reporting" class="hideCardContent">
 
-            <div class="container emp-profile" id="reportingform">
-                <form method="post">
-                    <div class="reportingPanel">
-                        <a href="#" class="btn btn-primary btn-xs pull-left mr-2" id="heading">Reporting Tool</a>
-                        <input type="button" class="btn btn-primary btn-xs pull-right ml-2 mb-2" value="Previous Reports">
-                        <input type="text" class="btn btn-primary btn-xs pull-right ml-2 mb-2" id="monthandyear" disabled placeholder="Month And Year">
-                    </div>
-
-
-
-                    <div class="separator"></div>
-
-
-                    <label id="headtext">Write Here :</label>
-                    <div id="myeditor">
-                        <textarea id="editortextarea" placeholder="Start from here....."></textarea>
-                    </div><br>
-
-                    <div id="checkboxdiv">
-                        <input type="checkbox" id="toggleSubmitPost"> The input provided above is best of my knowledge.
-                    </div><br>
-
-
-                    <div id="sub_bun">
-                        <button type="submit" class="btn btn-primary btn-xs dull" id="sub_bun">SUBMIT</button>
-                    </div>
-
-                    <div id="instruction">
-                        <br><br> <br>
-                        <label id="headtext">Instructions :</label><br> 1. WeCBR is a Student Help Club. CBR basically means Community Based Rehabilitation at student level.<br> 2. As we know that this is the era of Information, it means information is
-                        available free of cost. <br> 3. We are a diverse team with distinct backgrounds, sharing one commonality: a passion for setting and achieving goals by collaborating with students who are working to make the world a better place.<br>                        4. WeCBR aims to help students, who have faced lack of awareness in the initial days of colleges by providing them information about various events, internship offers and resources that makes them independent and aware.<br>
-                    </div>
-
-                </form>
-            </div>
-        </div>
     </div>
 </body>
 
