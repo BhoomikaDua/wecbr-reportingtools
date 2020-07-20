@@ -54,8 +54,6 @@ h6 {
     margin: auto;
 }
 
-
-
 #heading {
     background-color: white;
     /* color:gray; */
@@ -87,18 +85,18 @@ h6 {
 
 #myeditor {
     border: 2px solid #0062cc;
-    max-width:100%;
-    height:300px;
-    
+    max-width: 100%;
+    height: 300px;
 }
-#editortextarea{
+
+#editortextarea {
     /* border: 2px solid #0062cc; */
-    width:100%;
-    height:296.5px!important;
-    overflow-y:scroll;
+    width: 100%;
+    height: 296.5px!important;
+    overflow-y: scroll;
     border: none;
-    scrollbar-color :#0062cc lightblue;
-    scrollbar-width:thin;
+    scrollbar-color: #0062cc lightblue;
+    scrollbar-width: thin;
     /* background-color: rgba(173, 216, 230, 0.336); */
 }
 
@@ -120,7 +118,6 @@ h6 {
     color: blue;
     /* text-align: center; */
 }
-
 
 #download-certi {
     float: right;
@@ -188,7 +185,6 @@ h6 {
 .profile-head h6 {
     color: #0099FF;
 }
-
 
 .profile-edit-btn {
     border: none;
@@ -270,48 +266,52 @@ h6 {
     cursor: not-allowed;
 }
 
+.header-logo-custom {
+    display: inline-block;
+}
 
+.header-logo-custom span {
+    color: #fff;
+}
+
+table thead th {
+    color: #fff;
+}
 
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -17rem;
         width: 11rem;
     }
-    
     h4,
     m-0 {
         font-size: 1.1rem;
     }
-    
     #sidebar.active {
         margin-left: 0;
     }
-    
     #content {
         width: 100%;
         margin: 0;
     }
-    
     #content.active {
         margin-left: 14rem;
         width: calc(100% - 14rem);
     }
-    
-
     #myeditor {
-       
-        height:500px;
-        
+        height: 500px;
     }
-    #editortextarea{
-        height:496.5px!important;
+    #editortextarea {
+        height: 496.5px!important;
     }
 }
+
 @media (max-width: 322px) {
     #sub_bun {
         width: 140px;
     }
 }
+
 @media only screen and (min-width: 480px) {
     button,
     #download-certi,
@@ -319,23 +319,22 @@ h6 {
         font-size: 0.8rem;
     }
 }
+
 @media only screen and (max-width: 900px) {
     .reportingPanel {
         text-align: center;
     }
-    
     .reportingPanel>* {
         float: none;
     }
-    
     #heading {
         margin-left: 24px;
     }
-    
     .separator {
         margin: 1rem 0;
     }
 }
+
 @media only screen and (max-width: 560px) {
     .hideCardContent {
         display: none !important;
